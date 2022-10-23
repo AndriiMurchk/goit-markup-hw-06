@@ -264,6 +264,7 @@
 
 <footer class="footer-page">
     <div class="container container-footer">
+       
         <div class="footer-nav">
             <a  href="./index.html" class="logo-footer"><span class="logo-accent">Web</span>Studio</a>
         <address>
@@ -311,19 +312,92 @@
                 </li>
             </ul>
         </div>
-    </div>
-    
+        <div class="form-email">
+            <p class="form-email-title">підпишіться на розсилку</p>
+            <div class-form-email-wraper>
+                <input 
+            type="email"
+            placeholder="E-mail"
+            class="form-email-input" 
+            name="user_email" />
+            <button type="submit" class="form-submit">Підписатися
+                <svg class="form-submit-icon" width="24px" height="24px">
+                    <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+            </button>
+            </div>
+        </div>
+    </div>   
 </footer>
 
 <div class="backdrop is-hidden" data-modal>
     <div class="modal">
-        <p>Слава Укріїні!</p>
         <button type="button" class="btn-modal" data-modal-close>
             <svg class="modal-close-icon" width="18px" height="18px">
                 <use href="./images/icons.svg#icon-close"> </use>
             </svg>
         </button>
-        
+        <form class="modal-form">
+            <p class="modal-form-title">Залиште свої дані, ми вам передзвонимо</p>
+            <label class="modal-form-field" >
+                <span class="modal-form-input-desc">Ім'я</span>
+                <span class="modal-form-input-wraper">
+                    <input 
+                    type="text" 
+                    class="modal-form-input" 
+                    name="user_name"
+                    pattern="[a-zA-zа-яА-яіІїЇєЄ]+"
+                    required />
+                    <svg class="icon-modal-form" width="18px" height="18px">
+                    <use href="./images/icons.svg#icon-name"></use>
+                </svg>
+                </span>
+            </label>
+            <label class="modal-form-field" >
+                <span class="modal-form-input-desc">Пошта</span>
+                <span class="modal-form-input-wraper">
+                    <input 
+                    type="email" 
+                    class="modal-form-input" 
+                    name="user_mail" />
+                    <svg class="icon-modal-form" width="18px" height="18px">
+                        <use href="./images/icons.svg#icon-email"></use>
+                    </svg>
+                </span>
+                
+            </label>
+            <label class="modal-form-field" >
+                <span class="modal-form-input-desc">Телефон</span>
+                <span class="modal-form-input-wraper">
+                    <input 
+                    type="tel" 
+                    class="modal-form-input" 
+                    name="user_phone" />
+                    <svg class="icon-modal-form" width="18px" height="18px">
+                        <use href="./images/icons.svg#icon-phone"></use>
+                    </svg>
+                </span>
+            </label>
+            <label class="modal-form-field" >
+                <span class="modal-form-input-desc">Коментар</span>
+                <textarea 
+                class="modal-form-comment"
+                name="user_comment" 
+                placeholder=" Введіть текст">
+            </textarea>
+            </label>          
+            <label class="modal-form-chekbox-wraper">
+                <input 
+                type="checkbox" 
+                class="modal-form-checkbox visually-hidden" 
+                name="user_policy" />
+                <svg class="modal-form-own-checkbox" width="16px" height="16px">
+                    <use class="modal-form-own-checkbox-icon" href="./images/icons.svg#icon-check"></use>
+                </svg>
+                Погоджуюся з розсилкою та приймаю&nbsp;<a class="link-checkbox" href="">Умови договору</a>
+            </label>
+            <button type="submit" class="modal-form-submit">Відправити</button>
+        </form>        
     </div>
     
 </div>
